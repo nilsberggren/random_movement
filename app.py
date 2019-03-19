@@ -10,6 +10,9 @@ print(steps)
 x = 0
 y = 0
 
+x_finish = []
+y_finish = []
+
 
 def move(x, y):
     # 0 = Söder
@@ -35,8 +38,12 @@ def move(x, y):
 
 for i in range(steps):
     x, y = move(x, y)
+    x_finish.append(x)
+    y_finish.append(y)
 
 print(f"Antal steg tagna: {steps}")
 print(f"X = {x}")
 print(f"Y = {y}")
+print(x_finish)
+print(y_finish)
 
